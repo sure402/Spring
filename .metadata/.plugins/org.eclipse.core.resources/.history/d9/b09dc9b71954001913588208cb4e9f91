@@ -1,0 +1,44 @@
+package com.luv2code.springdemo;
+
+public class Employee {
+	
+	private EmployeeInfo employeInfo;
+	
+	private String empId;
+	private String empName;
+
+	
+	public void setEmployeInfo(EmployeeInfo employeInfo) {
+		this.employeInfo = employeInfo;
+	}
+	
+	public void employeeAdd(){
+		employeInfo.empDetails();
+		
+	}
+	public void getEmpId() {
+		System.out.println("EmployeeId :"+ empId);
+		
+	}
+	public void setEmpId(String empId) {
+		
+		this.empId = empId;
+	}
+	public void getEmpName() {
+		System.out.println("EmployeeName :"+ empName);
+	
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	
+	public void customInit(){
+		
+		System.out.println("Custom  Initmethod");
+	}
+	public void customDestroy(){
+		
+		System.out.println("Bean is in destroy method");
+	}
+	
+}

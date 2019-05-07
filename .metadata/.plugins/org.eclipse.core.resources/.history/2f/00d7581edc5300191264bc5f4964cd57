@@ -1,0 +1,9 @@
+package com.luv2code.springdemo;
+
+public class HelloGuru {
+
+	private StudentSuresh StdSuresh;
+	private String notes ;
+	
+	
+}

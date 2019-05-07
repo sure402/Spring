@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	
+    <!-- Define your beans here -->
+    <context:annotation-config/>
+ 	<bean id="guruBeanId"
+ 		class="com.luv2code.springdemo.autowire.GuruNaveen">
+ 	<!--  <constructor-arg ref ="StudentSuresh"/>	 -->
+ 	<!--  <property name="StudentSuresh" ref="StudentSuresh"/>	-->
+ 	 <property name="guruName" value="Naveen"/> 
+ 	<property name="guruAge" value="35"/>
+ 	<property name="a" value="2"/> 
+ 	<property name="b" value="3"/> 
+ 	</bean>
+ 	
+ 	<bean id="StudentSuresh"
+ 		class="com.luv2code.springdemo.autowire.StudentSuresh">	 		
+ 	</bean>
+ 	
+ 	
+   
+</beans>
+
+
+
+
+

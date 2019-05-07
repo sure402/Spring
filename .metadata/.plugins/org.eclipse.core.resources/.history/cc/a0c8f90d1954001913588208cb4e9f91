@@ -1,0 +1,28 @@
+package com.luv2code.springdemo;
+
+public class Employee {
+	
+	private EmployeeInfo employeInfo;
+	
+	private String empId;
+	private String empName;
+
+	
+	public void getEmpId() {
+		System.out.println("EmployeeId :"+ empId);
+		
+	}
+	public void setEmpId(String empId) {
+		
+		this.empId = empId;
+	}
+	public void getEmpName() {
+		System.out.println("EmployeeName :"+ empName);
+	
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+
+	
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	
+    <!-- Define your beans here -->
+    
+ 	<bean id="guruBeanId"
+ 		class="com.luv2code.springdemo.GuruNaveen">
+ 	<!--  <constructor-arg ref ="StudentSuresh"/>	 -->
+ 	<property name="StudentSuresh" ref="StudentSuresh"/>	
+ 	</bean>
+ 	
+ 	<bean id="StudentSuresh"
+ 		class="com.luv2code.springdemo.StudentSuresh">	 		
+ 	</bean>
+ 	
+ 	 	<bean id="helloguru" 
+ 		class="com.luv2code.springdemo.HelloGuru" init-method="init" destroy-method="destroy">	
+ 		<property name="notes" value = "sureshnotes"/>
+ 		 <property name="StdSuresh" ref = "StudentSuresh"/>		
+ 	</bean>
+ 	
+ 	<bean id="empInfoBean"
+ 		class="com.luv2code.springdemo.EmployeeInfo">	 		
+ 	</bean>
+ 	
+ 	<bean id="empBean" 
+ 		class="com.luv2code.springdemo.Employee" init-method="init" destroy-method="destroy">	
+ 		<property name="empId" value = "10034105"/>
+ 		<property name="empName" value = "Suresh"/>
+ 		 <property name="empName" ref = "empInfoBean"/>		
+ 	</bean>
+ 	
+  
+</beans>
+
+
+
+
+

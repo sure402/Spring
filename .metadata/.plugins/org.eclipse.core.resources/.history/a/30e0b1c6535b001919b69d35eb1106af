@@ -1,0 +1,63 @@
+package com.luv2code.springdemo.autowire;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Required;
+
+public class GuruNaveen {
+	
+	@Autowired
+	@Qualifier("StudentSuresh")
+
+	private StudentSuresh StudentSuresh;
+	
+	
+	private String guruName;
+	
+	private int guruAge;
+	
+	
+	
+//	public  GuruNaveen(StudentSuresh StudentSuresh){
+//		this.StudentSuresh = StudentSuresh;
+//		System.out.println("InsideNaveenConstructor");
+//		
+//	}
+
+	public String getGuruName() {
+		return guruName;
+	}
+
+	@Required
+	public void setGuruName(String guruName) {
+		this.guruName = guruName;
+	}
+
+
+	public int getGuruAge() {
+		return guruAge;
+	}
+
+	@Required
+	public void setGuruAge(int guruAge) {
+		this.guruAge = guruAge;
+	}
+
+	
+	public void callAdd(){
+		
+		StudentSuresh.add();
+	}
+
+
+	public StudentSuresh getStudentSuresh() {
+		return StudentSuresh;
+	}
+
+
+	public void setStudentSuresh(StudentSuresh studentSuresh) {
+		StudentSuresh = studentSuresh;
+		System.out.println("This is StudentSuresh setter injection");
+	}
+
+}

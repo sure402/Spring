@@ -1,0 +1,14 @@
+package com.luv2code.springdemo;
+
+public class GuruNaveen {
+	
+	private StudentSuresh StudentSuresh;
+	
+	
+	public  GuruNaveen(StudentSuresh StudentSuresh){
+		this.StudentSuresh = StudentSuresh;
+		System.out.println("InsideNaveenConstructor");
+		
+	}
+
+}

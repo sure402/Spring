@@ -1,0 +1,12 @@
+package com.luv2code.spring.mvc;
+
+@Controller
+@RequestMapping("/hello")
+public class HelloGuru{
+	
+	@RequestMapping(method=RequestMethod.GET)
+	public String getMessage(ModelMap model){
+		model.addAttribute("welcomeMessage");
+	} 
+
+}

@@ -1,0 +1,23 @@
+package com.luv2code.spring.aop.businesslogic;
+
+public class MyManagerImpl implements MyManager {
+
+	@Override
+	public void createEmployee(GuruNaveen gn) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteEmployee(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateEmployee(GuruNaveen gn) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

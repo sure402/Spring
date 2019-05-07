@@ -1,0 +1,18 @@
+package com.luv2code.springdemo.aop;
+
+import org.aspectj.lang.JoinPoint;
+
+
+
+public class LogMainClass {
+
+	public void logbefore(JoinPoint jp){
+		
+		System.out.println("logbeforeMethod");
+	}
+	public void logafter(JoinPoint jp){
+		
+		System.out.println("logbafterMethod");
+	}
+	
+}

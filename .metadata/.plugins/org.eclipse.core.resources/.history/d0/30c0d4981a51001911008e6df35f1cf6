@@ -1,0 +1,12 @@
+package com.hate2code.springdemo;
+
+public class CricketCoach implements Coach {
+	private String coachName ;
+
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "cricket match begins at 9am";
+	}
+
+}

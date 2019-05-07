@@ -1,0 +1,16 @@
+package com.luv2code.springdemo.aop;
+
+import org.aopalliance.intercept.Joinpoint;
+
+public class LogMainClass {
+
+	public void logbefore(Joinpoint jp){
+		
+		System.out.println("logbeforeMethod");
+	}
+	public void logafter(Joinpoint jp){
+		
+		System.out.println("logbafterMethod");
+	}
+	
+}
